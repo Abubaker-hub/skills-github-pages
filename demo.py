@@ -56,7 +56,15 @@ print(converted_celsius)
 
 
 
+s5={2,4,6,8,10,12,14,16}
 
+def check_presence(n , s):
+    if n in s:
+        return f"{n} is here"
+    else:
+        return f"{n} is absent"
+
+print(check_presence(2, s5))
 
 
 
