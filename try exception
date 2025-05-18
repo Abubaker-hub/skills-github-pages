@@ -46,6 +46,20 @@ x = func1()
 print(x)
 
 
+def even_num():
+#     try:
+#         num = int(input("Enter the number: "))
+#         if num % 2 == 0:
+#             print("Even number")
+#         else:
+#             print("Odd number")
+#     except:
+#         print("Invalid Input")
+#     finally:
+#         print("I am always executed if I'm even or odd number")
+
+# x = even_num()
+# print(x)
 
 
 
