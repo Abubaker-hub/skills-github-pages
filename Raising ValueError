@@ -2,3 +2,87 @@ a = int(input("Enter any value between 5 and 9"))
 
 if (a<5 or a>9):
     raise ValueError("Value should be between 5 and 9")
+
+
+ser_input = input("Enter any value between 5 and 9 or type 'quit' to exit: ")
+
+# if user_input.lower() == "quit":
+#     print("You're quitting")
+
+# else:
+#     a = int(user_input)
+#     if a < 5 or a > 9:
+#         raise ValueError("Value should be between 5 and 9")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
