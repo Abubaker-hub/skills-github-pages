@@ -1,0 +1,97 @@
+Kaun banega kerour pati
+
+# questions = [
+#     ("Which language was used to create Facebook?", "Python", "French", "Javascript", "Php", 4),
+#     ("What is the capital of France?", "Berlin", "London", "Paris", "Madrid", 3),
+#     ("Which planet is known as the Red Planet?", "Earth", "Mars", "Jupiter", "Saturn", 2),
+#     ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+#     ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+#     ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+#     ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+#     ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+#     ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+#     ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+# ]
+
+
+# levels = [1000, 2000, 3000, 5000, 10000, 20000, 40000, 80000, 160000, 320000]
+
+# try:
+#     for i in range(0, len(questions)):
+#         question = questions[i]
+#         print(f"Question for Rs. {levels[i]}")
+#         print(f"a. {question[1]}                   b. {question[2]}")
+#         print(f"c. {question[3]}                   d. {question[4]}")
+#         reply = int(input("Enter your answer (1-4 ) or 0 to quit"))
+#         if reply == 0:
+#             break
+#         if(reply == question[-1]):
+#             print(f"Correct answer, you have won Rs. {levels[i]}")
+#             if i == 4:
+#                 money = 1000
+#             elif i == 9:
+#                 money = 2000
+#             elif i == 14:
+#                 money = 3000
+#             elif i == 19:
+#                 money = 5000
+#             elif i == 24:
+#                 money = 10000
+#             elif i == 29:
+#                 money = 20000
+#             elif i == 34:
+#                 money = 40000
+#             elif i == 39:
+#                 money = 80000
+#             elif i == 44:
+#                 money = 160000
+#             elif i == 49:
+#                 money = 320000
+#         else:
+#             print("Wrong answer!")
+#             break
+#     print(f"Your current balance is Rs. {money}")
+# except Exception as e:
+#     print("You've entered wrong questions!")
+# finally:
+#     print("Thank you for playing!")
+
+
+
+
+
+
+
+questions = [
+    ("Which language was used to create Facebook?", "Python", "French", "Javascript", "Php", 4),
+    ("What is the capital of France?", "Berlin", "London", "Paris", "Madrid", 3),
+    ("Which planet is known as the Red Planet?", "Earth", "Mars", "Jupiter", "Saturn", 2),
+    ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+    ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+    ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+    ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+    ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+    ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+    ("Who wrote 'Hamlet'?", "Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen", 2),
+]
+
+
+levels = [1000, 2000, 3000, 5000, 10000, 20000, 40000, 80000, 160000, 320000]
+
+
+money = 0
+for i in range(0, len(questions)):
+    question = questions[i]
+    print(f"Question for Rs. {levels[i]}")
+    print(f"a. {question[1]}                   b. {question[2]}")
+    print(f"c. {question[3]}                   d. {question[4]}")
+    reply = int(input("Enter your answer (1-4 ) or 0 to quit"))
+    if reply == 0:
+        break
+    if(reply == question[-1]):
+        print(f"Correct answer, you have won Rs. {levels[i]}")
+        money = levels[i]
+    else:
+        print("Wrong answer!")
+        break
+    print(f"Your current balance is Rs. {money}")
