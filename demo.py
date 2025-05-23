@@ -96,6 +96,37 @@ print(f"The GCD of {num1} and {num2} is {result}")
 
 
 
+# def is_prime(number):
+#   if number < 2:
+#     return False
+#   for i in range(2, number):
+#     if number % i == 0:
+#       return False
+#   return True
+
+# user_input = int(input("Enter the number here: "))
+# if is_prime(user_input):
+#   print(f"{user_input} is prime")
+# else:
+#   print(f"{user_input} is not prime")
+
+
+# def is_palindrome(astring):
+#   astring = astring.lower()
+#   reversed_st = astring[::-1]
+#   if astring == reversed_st:
+#     return True
+#   else:
+#     return False
+
+# user_input = input("Enter the number here: ")
+
+# if(is_palindrome(user_input)):
+#   print(f"{user_input} is palindrome")
+# else:
+#   print(f"{user_input} is not palindrome")
+
+
 
 
 
