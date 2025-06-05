@@ -1,0 +1,92 @@
+
+import random
+
+choice = ["Snake", "Water", "Gun"]
+games = []
+
+computer = input("Computer Turn: Snake(0) Water(1) or Gun(2): ")
+computer_choice = random.choice(computer)
+player = int(input("Player Turn: Snake(0) Water(1) or Gun(2): "))
+
+if computer == 0 and player == 0:
+  print("Computer: Snake\nPlayer : Snake\nComputer")
+  games.append("Draw")
+
+elif computer == 0 and player == 1:
+  print("Computer: Snake\nPlayer : Water\nCoomputer")
+  games.append("Computer Wins")
+
+elif computer == 0 and player == 2:
+  print("Computer: Snake\nPlayer : Gun\nComputer")
+  games.append("Player Wins")
+
+elif computer == 1 and player == 1:
+  print("Computer: Water\nPlayer : Water\nComputer")
+  games.append("Draw")
+
+elif computer == 1 and player == 2:
+  print("Computer: Water\nPlayer : Gun\nComputer")
+  games.append("Computer Wins")
+
+elif computer == 1 and player == 0:
+  print("Computer: Water\nPlayer : Snake\nComputer")
+  games.append("Player Wins")
+
+elif computer == 2 and player == 2:
+  print("Computer: Gun\nPlayer : Gun\nComputer")
+  games.append("Draw")
+
+elif computer == 2 and player == 0:
+  print("Computer: Gun\nPlayer : Snake\nComputer")
+  games.append("Computer Wins")
+
+elif computer == 2 and player == 1:
+  print("Compute: Gun\nPlayer : Water\nComputer")
+  games.append("Player Wins")
+
+
+import random
+
+choice = ["Snake", "Water", "Gun"]
+games = []
+
+computer = random.randint(0, 2)
+print(f"Computer has made its choice.")
+player = int(input("Player Turn: Snake(0) Water(1) or Gun(2): "))
+
+if computer == 0 and player == 0:
+    print("Computer: Snake\nPlayer : Snake\nComputer")
+    games.append("Draw")
+
+elif computer == 0 and player == 1:
+    print("Computer: Snake\nPlayer : Water\nComputer")
+    games.append("Computer Wins")
+
+elif computer == 0 and player == 2:
+    print("Computer: Snake\nPlayer : Gun\nComputer")
+    games.append("Player Wins")
+
+elif computer == 1 and player == 1:
+    print("Computer: Water\nPlayer : Water\nComputer")
+    games.append("Draw")
+
+elif computer == 1 and player == 2:
+    print("Computer: Water\nPlayer : Gun\nComputer")
+    games.append("Computer Wins")
+
+elif computer == 1 and player == 0:
+    print("Computer: Water\nPlayer : Snake\nComputer")
+    games.append("Player Wins")
+
+elif computer == 2 and player == 2:
+    print("Computer: Gun\nPlayer : Gun\nComputer")
+    games.append("Draw")
+
+elif computer == 2 and player == 0:
+    print("Computer: Gun\nPlayer : Snake\nComputer")
+    games.append("Computer Wins")
+
+elif computer == 2 and player == 1:
+    print("Computer: Gun\nPlayer : Water\nComputer")
+    games.append("Player Wins")
+
