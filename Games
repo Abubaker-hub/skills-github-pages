@@ -44,6 +44,8 @@ elif computer == 2 and player == 1:
   print("Compute: Gun\nPlayer : Water\nComputer")
   games.append("Player Wins")
 
+__________________________________________________________________________________________________________________________________________________________________________________________________________
+
 
 import random
 
@@ -89,4 +91,42 @@ elif computer == 2 and player == 0:
 elif computer == 2 and player == 1:
     print("Computer: Gun\nPlayer : Water\nComputer")
     games.append("Player Wins")
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________
+
+import random
+
+choice = ["Snak", "Water", "Gun"]
+games = []
+
+computer = random.randint(0, 2)
+print(f"Computer choose {choice[computer]}")
+player = int(input("Enter 0 for snak, 1 for water and 2 for gun: "))
+
+if computer == player:
+  print("Draw")
+
+elif (computer == 0 and player == 1) or \
+(computer == 1 and player == 2) or \
+(computer == 2 and player == 0):
+  print("Result: Computer win")
+  games.append("Computer win")
+
+else:
+  print("Player win")
+  games.append("Player win")
+
+print("game history:", games)
+
+
+
+
+
+
+
+
+
+
+
+
 
