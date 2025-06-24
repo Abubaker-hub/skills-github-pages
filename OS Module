@@ -38,11 +38,69 @@ except FileExistsError:
 # Remove the created directory
 # os.rmdir("new_directory") # Uncomment to remove
 
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+The os module in Python provides a portable way to interact with the operating system, including functions to manage files and directories, which can be used to "clear clutter" by deleting or moving unwanted items.
+1. Clearing the Terminal Screen:
+To clear the interactive Python shell or terminal screen, the os.system() function can be used to execute system-specific commands:
+Python
+
+import os
+
+def clear_screen():
+    # For Windows
+    if os.name == 'nt':
+        _ = os.system('cls')
+    # For macOS and Linux
+    else:
+        _ = os.system('clear')
+
+# Call the function to clear the screen
+clear_screen()
 
 
+2. Deleting Files and Directories:
+os.remove(path): Deletes a file at the specified path.
+os.rmdir(path): Deletes an empty directory at the specified path. It will raise an OSError if the directory is not empty.
+shutil.rmtree(path): (from the shutil module, which often works in conjunction with os for file operations) Recursively deletes a directory and its contents (files and subdirectories). Use with caution as it permanently deletes data.
+Example for Deleting Files:
+Python
+
+import os
+
+# Create a dummy file for demonstration
+with open("temp_file.txt", "w") as f:
+    f.write("This is a temporary file.")
+
+# Delete the file
+try:
+    os.remove("temp_file.txt")
+    print("temp_file.txt deleted successfully.")
+except OSError as e:
+    print(f"Error deleting file: {e}")
 
 
+3. Moving Files and Directories:
+os.rename(src, dst): Renames a file or directory from src to dst. This can be used to move files to an "archive" or "trash" directory.
+Example for Moving Files:
+Python
 
+import os
+
+# Create a dummy file
+with open("old_file.txt", "w") as f:
+    f.write("Content of old file.")
+
+# Create a directory to move the file into
+if not os.path.exists("archive"):
+    os.makedirs("archive")
+
+# Move the file
+try:
+    os.rename("old_file.txt", os.path.join("archive", "new_file.txt"))
+    print("File moved and renamed successfully.")
+except OSError as e:
+    print(f"Error moving file: {e}")
 
 
 
