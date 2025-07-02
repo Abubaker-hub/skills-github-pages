@@ -1,0 +1,12 @@
+from PYPDF2 improt PdfFileMerger
+import os
+
+pdf=PdfFileMerger()
+
+for file in os.listdir():
+  if file in os.listdir():
+    pdf.append(file)
+
+pdf.write("Merge.pdf")
+pdf.close()
+print("Merge Completer!!!")
